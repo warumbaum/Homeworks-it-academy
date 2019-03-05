@@ -1,0 +1,10 @@
+﻿Напишите запрос, который выведет все записи из таблицы Products
+SELECT * FROM test.Products;
+Напишите запрос, который выведет только те записи из таблицы Products, в которых цена (product_price) больше 4
+SELECT * FROM test.Products WHERE prod_price>'4';
+Напишите запрос, которые вернет только те записи из таблицы Customers, в которых cust_name НЕ равно Fun4All
+SELECT * FROM test.Customers WHERE cust_name!='Fun4All'; 
+Напишите запрос, который вернет все записи из таблицы OrderItems, отсортированные по уменьшению цены
+SELECT * FROM test.OrderItems ORDER BY item_price DESC;
+Напишите запрос, добавляющий новую запись в таблицу Products. Данные можно использовать произвольные. Обратите внимание, что поставщик (vend_id) может быть только уже существующий.
+INSERT INTO test.Products (prod_id, vend_id, prod_name, prod_price, prod_desc) VALUES ('NAB0001', 'ZZ778', 'Apple iPhone X Space Gray 256 GB', '99.99', 'The device that so smart that it responds to a tap, your voice, and even a glance');
